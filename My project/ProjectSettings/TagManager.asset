@@ -6,14 +6,15 @@ TagManager:
   tags:
   - Ground
   - hidingLayerMask
+  - Vine
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - HiddenPlayer
   - Water
   - UI
-  - 
+  - Mob
   - 
   - Object
   - 

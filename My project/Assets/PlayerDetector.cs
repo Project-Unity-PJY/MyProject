@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerDetector : MonoBehaviour
@@ -13,23 +14,25 @@ public class PlayerDetector : MonoBehaviour
         {
             Debug.Log("Player detected"); // 플레이어 감지 확인
 
-            if (!IsPlayerHiding(collision.transform))
+            if (!GameManager2.Instance.getPlayerHiding())
             {
                 Debug.Log("Player not hiding. Triggering game over."); // 플레이어 감지 및 숨지 않음 확인
-                animator.SetTrigger("EatPlayer");
-                GameManager2.Instance.GameOver();
+                animator.SetTrigger("eat");
+
+                StartCoroutine(WaitForEatAnimation());
             }
         }
     }
 
-    bool IsPlayerHiding(Transform player)
+    private IEnumerator WaitForEatAnimation()
     {
-        Vector2 directionToPlayer = (player.position - transform.position).normalized;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, directionToPlayer, Vector2.Distance(transform.position, player.position), hidingLayerMask);
+        // 애니메이션의 "eat" 상태가 끝날 때까지 기다림
+        while (animator.GetCurrentAnimatorStateInfo(0).IsName("eattest") &&
+               animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+        {
+            yield return null;
+        }
 
-        // 디버그 드로잉 추가
-        Debug.DrawRay(transform.position, directionToPlayer * Vector2.Distance(transform.position, player.position), Color.red, 1.0f);
-
-        return hit.collider != null;
+        GameManager2.Instance.GameOver();
     }
 }
