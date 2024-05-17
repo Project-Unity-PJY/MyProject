@@ -726,7 +726,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1db186cbaf7bc3b4c990031628607815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayerHiding: 0
 --- !u!4 &1090151946
 Transform:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class PathFollower : MonoBehaviour
 
     void Update()
     {
-        if (pathPoints.Length == 0)
+        if (GameManager2.Instance.getEnd() || pathPoints.Length == 0)
             return;
 
         Transform targetPoint = pathPoints[currentPointIndex];
@@ -21,4 +21,6 @@ public class PathFollower : MonoBehaviour
             currentPointIndex = (currentPointIndex + 1) % pathPoints.Length;
         }
     }
+
+  
 }

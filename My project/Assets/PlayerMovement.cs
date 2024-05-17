@@ -42,7 +42,6 @@ public class PlayerMovement : MonoBehaviour
         {
             if (isTouchingTree)
             {
-                GameManager2.Instance.setPlayerHiding();
                 gameObject.layer = LayerMask.NameToLayer("HiddenPlayer");
             }
 
@@ -106,7 +105,6 @@ public class PlayerMovement : MonoBehaviour
         if (collision.tag == "hidingLayerMask")
         {
             isTouchingTree = false;
-            GameManager2.Instance.setPlayerReveal();
             gameObject.layer = LayerMask.NameToLayer("Default");
         }
 

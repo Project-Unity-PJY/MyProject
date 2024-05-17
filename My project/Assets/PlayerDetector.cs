@@ -13,24 +13,21 @@ public class PlayerDetector : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
         {
             Debug.Log("Player detected"); // 플레이어 감지 확인
+            GameManager2.Instance.setEnd();
+            animator.SetTrigger("eat");
 
-            if (!GameManager2.Instance.getPlayerHiding())
-            {
-                Debug.Log("Player not hiding. Triggering game over."); // 플레이어 감지 및 숨지 않음 확인
-                animator.SetTrigger("eat");
-
-                StartCoroutine(WaitForEatAnimation());
-            }
+            StartCoroutine(WaitForEatAnimation());
         }
     }
 
     private IEnumerator WaitForEatAnimation()
     {
+        int time = 0;
         // 애니메이션의 "eat" 상태가 끝날 때까지 기다림
-        while (animator.GetCurrentAnimatorStateInfo(0).IsName("eattest") &&
-               animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+        while (time < 5)
         {
-            yield return null;
+            time++;
+            yield return new WaitForSeconds(1.0f);
         }
 
         GameManager2.Instance.GameOver();

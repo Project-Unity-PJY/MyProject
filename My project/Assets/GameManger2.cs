@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 public class GameManager2 : MonoBehaviour
 {
     private static GameManager2 instance = null;
-    public bool isPlayerHiding = false;
+    private bool isEnd = false;
+
 
     void Awake()
     {
@@ -45,17 +46,13 @@ public class GameManager2 : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public bool getPlayerHiding()
+    public void setEnd()
     {
-        return isPlayerHiding;
+        isEnd = true;
     }
 
-    public void setPlayerHiding()
+    public bool getEnd()
     {
-        isPlayerHiding = true;
-    }
-    public void setPlayerReveal()
-    {
-        isPlayerHiding = false;
+        return isEnd ;
     }
 }
