@@ -1,0 +1,360 @@
+fileFormatVersion: 2
+guid: a61dc8fe42a8faf48ac023bd4e7577db
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Timothy Sprite_Frame_0
+    originalName: 
+    pivot: {x: 0.25, y: -0.6774193}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 4
+      width: 8
+      height: 31
+    spriteID: 327f1ade0406ce248aadb3adaf6e307a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 4}
+  - name: Timothy Sprite_Frame_1
+    originalName: 
+    pivot: {x: 0.4166667, y: -0.70000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 82
+      width: 12
+      height: 30
+    spriteID: ff0b22324d7216f46a92217371c9ed48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 82}
+  - name: Timothy Sprite_Frame_2
+    originalName: 
+    pivot: {x: 0.47058824, y: -0.6774193}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 43
+      width: 17
+      height: 31
+    spriteID: 8eaaf702daf17684098263e1ad0f2ec8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 43}
+  - name: Timothy Sprite_Frame_3
+    originalName: 
+    pivot: {x: 0.4166667, y: -0.70000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 4
+      width: 12
+      height: 30
+    spriteID: b119b467d805b4142b1aee7e20335ae3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 4}
+  - name: Timothy Sprite_Frame_4
+    originalName: 
+    pivot: {x: 0.25, y: -0.6774193}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 43
+      width: 8
+      height: 31
+    spriteID: c9ad1355bb8bce74db13d52cccd2602c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 43}
+  - name: Timothy Sprite_Frame_5
+    originalName: 
+    pivot: {x: 0.4166667, y: -0.70000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 42
+      width: 12
+      height: 30
+    spriteID: 53fb31d2edb11804bbe0e43dc10e32db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 42}
+  - name: Timothy Sprite_Frame_6
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.6774193}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 18
+      height: 31
+    spriteID: 6ef4fa130f902fc4d8944e1d72b35301
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Timothy Sprite_Frame_7
+    originalName: 
+    pivot: {x: 0.4166667, y: -0.70000005}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 80
+      width: 12
+      height: 30
+    spriteID: c8c368e9f24c5a549864dab6bc9c0969
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 80}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1706605035
+    name: Timothy Sprite
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Timothy Sprite_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 30
+        y: 21
+        width: 8
+        height: 31
+      spriteId: 327f1ade0406ce248aadb3adaf6e307a
+    - name: Timothy Sprite_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 27
+        y: 21
+        width: 12
+        height: 30
+      spriteId: ff0b22324d7216f46a92217371c9ed48
+    - name: Timothy Sprite_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 24
+        y: 21
+        width: 17
+        height: 31
+      spriteId: 8eaaf702daf17684098263e1ad0f2ec8
+    - name: Timothy Sprite_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 27
+        y: 21
+        width: 12
+        height: 30
+      spriteId: b119b467d805b4142b1aee7e20335ae3
+    - name: Timothy Sprite_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 30
+        y: 21
+        width: 8
+        height: 31
+      spriteId: c9ad1355bb8bce74db13d52cccd2602c
+    - name: Timothy Sprite_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 27
+        y: 21
+        width: 12
+        height: 30
+      spriteId: 53fb31d2edb11804bbe0e43dc10e32db
+    - name: Timothy Sprite_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 24
+        y: 21
+        width: 18
+        height: 31
+      spriteId: 6ef4fa130f902fc4d8944e1d72b35301
+    - name: Timothy Sprite_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 27
+        y: 21
+        width: 12
+        height: 30
+      spriteId: c8c368e9f24c5a549864dab6bc9c0969
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 64}

@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: e1c952f6deda76f419fd77481fc7db57
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: TimothyRRIGHT_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 4
+      width: 8
+      height: 32
+    spriteID: 7ff7a36df8d71394da41774ba89db7af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 4}
+  - name: TimothyRRIGHT_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 44
+      width: 8
+      height: 32
+    spriteID: 1d0dbe6f7ccd4e34eb86413f1b9e33a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 44}
+  - name: TimothyRRIGHT_Frame_2
+    originalName: 
+    pivot: {x: 0.5833334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 44
+      width: 12
+      height: 31
+    spriteID: 78a22eab6c6e3014db3fd61c9c761773
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 44}
+  - name: TimothyRRIGHT_Frame_3
+    originalName: 
+    pivot: {x: 0.5833334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 44
+      width: 12
+      height: 32
+    spriteID: 525b268e6f2af6a46b8266d50bea8aa6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 44}
+  - name: TimothyRRIGHT_Frame_4
+    originalName: 
+    pivot: {x: 0.5555556, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 18
+      height: 32
+    spriteID: 3bd08fb2dfadbbd4089fbd4ee4cb098d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: TimothyRRIGHT_Frame_5
+    originalName: 
+    pivot: {x: 0.5555556, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 44
+      width: 18
+      height: 32
+    spriteID: 166233a0dc1f3be48935559bc9eeb2e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 44}
+  - name: TimothyRRIGHT_Frame_6
+    originalName: 
+    pivot: {x: 0.5833334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 84
+      width: 12
+      height: 32
+    spriteID: 63c8cf1880d71434583b8da56eff4ee7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 84}
+  - name: TimothyRRIGHT_Frame_7
+    originalName: 
+    pivot: {x: 0.5833334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 4
+      width: 12
+      height: 32
+    spriteID: 4f50e26bbafe2af428dacbb022eaf0b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 4}
+  - name: TimothyRRIGHT_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 96
+      y: 84
+      width: 8
+      height: 32
+    spriteID: c91694db8a024714a8b1a360ad45d986
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 96, y: 84}
+  - name: TimothyRRIGHT_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 4
+      width: 8
+      height: 32
+    spriteID: 1765fed290df257498454cf89e526550
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 4}
+  - name: TimothyRRIGHT_Frame_10
+    originalName: 
+    pivot: {x: 0.5833334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 83
+      width: 12
+      height: 31
+    spriteID: 961e657acd8727848b2fef4ed4677113
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 83}
+  - name: TimothyRRIGHT_Frame_11
+    originalName: 
+    pivot: {x: 0.5833334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 44
+      width: 12
+      height: 32
+    spriteID: ed1aedb70a961c845b2100ac34879ff0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 44}
+  - name: TimothyRRIGHT_Frame_12
+    originalName: 
+    pivot: {x: 0.5555556, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 84
+      width: 18
+      height: 32
+    spriteID: 1a17ffccf8bbe7f44a6a35bee7edfc6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 84}
+  - name: TimothyRRIGHT_Frame_13
+    originalName: 
+    pivot: {x: 0.5555556, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 4
+      width: 18
+      height: 32
+    spriteID: 4c65c6fc722a49e4483bdf096144081e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 4}
+  - name: TimothyRRIGHT_Frame_14
+    originalName: 
+    pivot: {x: 0.5833334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 84
+      width: 12
+      height: 32
+    spriteID: 6cd775c7756b0c241b7c7bea5c00ec3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 84}
+  - name: TimothyRRIGHT_Frame_15
+    originalName: 
+    pivot: {x: 0.5833334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 4
+      width: 12
+      height: 32
+    spriteID: bc40aff3703d300478241c705c588169
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -920375384
+    name: TimothyRRIGHT
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: TimothyRRIGHT_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 12
+        y: 0
+        width: 8
+        height: 32
+      spriteId: 7ff7a36df8d71394da41774ba89db7af
+    - name: TimothyRRIGHT_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 12
+        y: 0
+        width: 8
+        height: 32
+      spriteId: 1d0dbe6f7ccd4e34eb86413f1b9e33a7
+    - name: TimothyRRIGHT_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 9
+        y: 0
+        width: 12
+        height: 31
+      spriteId: 78a22eab6c6e3014db3fd61c9c761773
+    - name: TimothyRRIGHT_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 9
+        y: 0
+        width: 12
+        height: 32
+      spriteId: 525b268e6f2af6a46b8266d50bea8aa6
+    - name: TimothyRRIGHT_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 6
+        y: 0
+        width: 18
+        height: 32
+      spriteId: 3bd08fb2dfadbbd4089fbd4ee4cb098d
+    - name: TimothyRRIGHT_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 6
+        y: 0
+        width: 18
+        height: 32
+      spriteId: 166233a0dc1f3be48935559bc9eeb2e8
+    - name: TimothyRRIGHT_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 9
+        y: 0
+        width: 12
+        height: 32
+      spriteId: 63c8cf1880d71434583b8da56eff4ee7
+    - name: TimothyRRIGHT_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 9
+        y: 0
+        width: 12
+        height: 32
+      spriteId: 4f50e26bbafe2af428dacbb022eaf0b4
+    - name: TimothyRRIGHT_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 12
+        y: 0
+        width: 8
+        height: 32
+      spriteId: c91694db8a024714a8b1a360ad45d986
+    - name: TimothyRRIGHT_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 12
+        y: 0
+        width: 8
+        height: 32
+      spriteId: 1765fed290df257498454cf89e526550
+    - name: TimothyRRIGHT_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 9
+        y: 0
+        width: 12
+        height: 31
+      spriteId: 961e657acd8727848b2fef4ed4677113
+    - name: TimothyRRIGHT_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 9
+        y: 0
+        width: 12
+        height: 32
+      spriteId: ed1aedb70a961c845b2100ac34879ff0
+    - name: TimothyRRIGHT_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 6
+        y: 0
+        width: 18
+        height: 32
+      spriteId: 1a17ffccf8bbe7f44a6a35bee7edfc6b
+    - name: TimothyRRIGHT_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 6
+        y: 0
+        width: 18
+        height: 32
+      spriteId: 4c65c6fc722a49e4483bdf096144081e
+    - name: TimothyRRIGHT_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 9
+        y: 0
+        width: 12
+        height: 32
+      spriteId: 6cd775c7756b0c241b7c7bea5c00ec3d
+    - name: TimothyRRIGHT_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 9
+        y: 0
+        width: 12
+        height: 32
+      spriteId: bc40aff3703d300478241c705c588169
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 32, y: 32}
