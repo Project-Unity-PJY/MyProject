@@ -1,5 +1,8 @@
 # 깃 협업 사용법
 
+## 1번은 작업 하기 전에 해야되고 2번 부터는 작업 다하고 하면됨
+### 혹시 모르니까 1번 할때는 main 브랜치에 있는 상태로 브랜치 만드셈 꼭꼭꼭 제발
+
 ## 1. 브랜치 생성
 
 - 브랜치는 일종의 작업실이라 생각하면됨
@@ -92,3 +95,18 @@
 ## Pull Requests
 
 - 너가 작업한 브랜치를 main 브랜치에 합치는 과정
+- 깃허브 들어가기
+- 브랜치에서 푸쉬했으면 노랜색 바 뜰거임 옆에 compare & pull request 클림
+![img.png](ReadMeImage/img_12.png)
+
+- 여기도 커밋할때랑 똑같이 하면됨
+- 내용 다쓰고 우측하단 초록색 creat pull request 버튼 클릭
+![img_1.png](ReadMeImage/img_13.png)
+
+- 좌측하단 초록색 merge pull request 버튼 클릭 후 한번 더 초록색 버튼 뜰거임 여기서 둘중 하나라도 빨간색 뜨면 호출하셈
+![img_2.png](ReadMeImage/img_15.png)
+
+- 여기까지 오면 끝
+- 브랜치 삭제하기
+- 보라색 바 안에 있는 delete branch 버튼 꼭 누르셈 니가 집가서 또 같은 이름으로 브랜치 만들거여도 누르셈 그냥 누르셈
+![img_3.png](ReadMeImage/img_14.png)
