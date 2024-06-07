@@ -8,7 +8,6 @@ public class PlayerDetector : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collision detected with: " + collision.collider.name); // 충돌 감지 확인
 
         if (collision.collider.CompareTag("Player"))
         {

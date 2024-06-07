@@ -16,7 +16,7 @@ public class NPC : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<PlayerMovement>().SetCurrentNPC(null);
+           // other.GetComponent<PlayerMovement>().SetCurrentNPC(null);
         }
     }
 }
