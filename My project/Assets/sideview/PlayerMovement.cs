@@ -15,65 +15,94 @@ public class PlayerMovement : MonoBehaviour
     private bool isTouchingVine = false;
     private float vineTop; // 덩굴의 상단 경계
     private float vineBottom; // 덩굴의 하단 경계
-    private NPC currentNPC; // 현재 대화 중인 NPC
+    private bool currentNPC; // 현재 대화 중인 NPC
+
+    // 레이캐스트를 쏘는 최대 거리
+    public float rayDistance = 0.1f;
+    // 플레이어 오브젝트
+    public Transform player;
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Rigidbody2D 컴포넌트 가져오기
         animator = GetComponent<Animator>(); // Animator 컴포넌트 가져오기
+        currentNPC = false;
     }
 
     void Update()
-    {
-        float moveX = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
-        transform.position = transform.position + new Vector3(moveX, 0, 0);
+    {   
+        // 대화중 아닐 때만 이동 가능
+        if (!currentNPC) {
+            float moveX = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+            transform.position = transform.position + new Vector3(moveX, 0, 0);
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse); // 점프 힘을 추가
-            isGrounded = false; // 점프한 후에는 공중에 있으므로 isGrounded를 false로 설정
-        }
-
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            if (isTouchingTree)
+            if (Input.GetButtonDown("Jump") && isGrounded)
             {
-                gameObject.layer = LayerMask.NameToLayer("HiddenPlayer"); // 플레이어를 숨김 레이어로 변경
+                rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse); // 점프 힘을 추가
+                isGrounded = false; // 점프한 후에는 공중에 있으므로 isGrounded를 false로 설정
             }
 
-            if (isTouchingVine)
+            if (Input.GetKey(KeyCode.DownArrow))
             {
-                animator.SetBool("isClimbing", true); // 덩굴 오르는 애니메이션 활성화
-                if (transform.position.y > vineBottom)
+                if (isTouchingTree)
                 {
-                    transform.Translate(new Vector3(0, -(climbSpeed * Time.deltaTime), 0)); // 내려가기
+                    gameObject.layer = LayerMask.NameToLayer("HiddenPlayer"); // 플레이어를 숨김 레이어로 변경
+                }
+
+                if (isTouchingVine)
+                {
+                    animator.SetBool("isClimbing", true); // 덩굴 오르는 애니메이션 활성화
+                    if (transform.position.y > vineBottom)
+                    {
+                        transform.Translate(new Vector3(0, -(climbSpeed * Time.deltaTime), 0)); // 내려가기
+                    }
+                }
+            }
+
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                if (isTouchingVine)
+                {
+                    animator.SetBool("isClimbing", true); // 덩굴 오르는 애니메이션 활성화
+                    if (transform.position.y < vineTop)
+                    {
+                        transform.Translate(new Vector3(0, climbSpeed * Time.deltaTime, 0)); // 올라가기
+                    }
                 }
             }
         }
 
-        if (Input.GetKey(KeyCode.UpArrow))
+        // 스페이스바 입력을 감지
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (isTouchingVine)
+            if (currentNPC)
             {
-                animator.SetBool("isClimbing", true); // 덩굴 오르는 애니메이션 활성화
-                if (transform.position.y < vineTop)
-                {
-                    transform.Translate(new Vector3(0, climbSpeed * Time.deltaTime, 0)); // 올라가기
-                }
+                GameManager2.Instance.talkManager3.nextTalk();
             }
-        }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if (currentNPC != null)
+            else
             {
-                if (TalkManager2.Instance.IsTalking())
+                // 플레이어 오브젝트의 위치에서 레이캐스트 발사
+                Vector2 origin = player.position;
+
+                RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.right, 0.1f);
+
+                // 레이캐스트가 충돌한 경우
+                if (hit.collider != null)
                 {
-                    TalkManager2.Instance.ContinueDialogue();
-                }
-                else
-                {
-                    TalkManager2.Instance.StartDialogue(currentNPC.npcID);
+                    // 충돌한 물체에서 TalkData 컴포넌트 찾기
+                    TalkData talkData = hit.collider.GetComponent<TalkData>();
+
+                    if (talkData != null)
+                    {
+                        GameManager2.Instance.talkManager3.setTalk(talkData);
+                        currentNPC = true;
+                    }
+                    else
+                    {
+                        // TalkData 컴포넌트가 없는 경우의 로직
+                        Debug.Log("TalkData 컴포넌트가 없습니다: " + hit.collider.name);
+                    }
                 }
             }
         }
@@ -101,10 +130,6 @@ public class PlayerMovement : MonoBehaviour
             vineBottom = collision.bounds.min.y;
         }
 
-        if (collision.tag == "NPC")
-        {
-            SetCurrentNPC(collision.GetComponent<NPC>());
-        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -120,15 +145,10 @@ public class PlayerMovement : MonoBehaviour
             isTouchingVine = false; // 덩굴과 접촉 종료
             animator.SetBool("isClimbing", false); // 덩굴 오르는 애니메이션 비활성화
         }
-
-        if (collision.tag == "NPC")
-        {
-            SetCurrentNPC(null);
-        }
     }
 
-    public void SetCurrentNPC(NPC npc)
+    public void SetCurrentNPC(bool isEnd)
     {
-        currentNPC = npc;
+        currentNPC = isEnd;
     }
 }
