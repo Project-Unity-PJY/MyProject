@@ -15,18 +15,6 @@ public class TalkManager3 : MonoBehaviour
 
     public PlayerMovement playerMovement; // 플레이어 스크립트
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     // 대화창 활성화 & 값 셋팅
     public void setTalk(TalkData talkData)
     {
@@ -49,14 +37,32 @@ public class TalkManager3 : MonoBehaviour
         if (talkIndex < maxTalkIndex)
         {
             var currentTalk = talkData.nomalTalk[talkIndex];
-            talkTxt.text = currentTalk.dialogue;
             if (currentTalk.speaker == 1)
             {
+                // npc 대사
                 npcImg.sprite = talkData.npcImage;
+                talkTxt.text = currentTalk.dialogue;
             }
             else if (currentTalk.speaker == 2)
             {
+                // 유저 대사
                 npcImg.sprite = playerImage;
+                talkTxt.text = currentTalk.dialogue;
+            }
+            else if(currentTalk.speaker == 3)
+            {
+                // 아이템 획득
+                npcImg.sprite = null;
+                talkTxt.text = currentTalk.dialogue + " 를 획득하였습니다.";
+
+                GameManager2.Instance.inventoryManager3.AddItem(talkData.reward, talkData.rQuantity);
+            }
+            else
+            {
+                // 아이템 사용
+                npcImg.sprite = null;
+                talkTxt.text = currentTalk.dialogue + " 를 잃었습니다.";
+                GameManager2.Instance.inventoryManager3.RemoveItem(talkData.penalty, talkData.pQuantity);
             }
         }
     }

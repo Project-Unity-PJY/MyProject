@@ -7,6 +7,7 @@ public class GameManager2 : MonoBehaviour
     private static GameManager2 instance = null;
     private bool isEnd = false;
     public TalkManager3 talkManager3;
+    public InventoryManager inventoryManager3;
 
     void Awake()
     {
