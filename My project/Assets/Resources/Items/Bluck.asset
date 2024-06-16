@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0ec38e12f679ce48bae61460dab91d4, type: 3}
+  m_Name: Bluck
+  m_EditorClassIdentifier: 
+  itemNum: 0
+  itemName: Bluck
+  itemImg: {fileID: -4495019453050117675, guid: 7adc9b9a22899f940bbd315b9cab7c7a, type: 3}
